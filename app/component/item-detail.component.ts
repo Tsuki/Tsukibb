@@ -5,20 +5,19 @@ import {Item} from '../types/item';
 import {ItemService} from '../services/item.service';
 
 @Component({
-    selector: 'ns-details',
-    moduleId: module.id,
-    templateUrl: './item-detail.component.html',
+  selector: 'ns-details',
+  moduleId: module.id,
+  templateUrl: './item-detail.component.html',
 })
 export class ItemDetailComponent implements OnInit {
-    item: Item;
+  item: Item;
 
-    constructor(
-        private itemService: ItemService,
-        private route: ActivatedRoute
-    ) { }
+  constructor(private itemService: ItemService,
+              private route: ActivatedRoute) {
+  }
 
-    ngOnInit(): void {
-        const id = +this.route.snapshot.params['id'];
-        this.item = this.itemService.getItem(id);
-    }
+  ngOnInit(): void {
+    const id = +this.route.snapshot.params['id'];
+    this.item = this.itemService.getItem(id);
+  }
 }
