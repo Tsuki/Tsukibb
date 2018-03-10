@@ -3,9 +3,9 @@ import {NativeScriptModule} from 'nativescript-angular/nativescript.module';
 import {AppRoutingModule} from './app.routing';
 import {AppComponent} from './app.component';
 
-import {ItemService} from './item/item.service';
-import {ItemsComponent} from './item/items.component';
-import {ItemDetailComponent} from './item/item-detail.component';
+import {ItemService} from './services/item.service';
+import {ItemsComponent} from './component/items.component';
+import {ItemDetailComponent} from './component/item-detail.component';
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 import {NativeScriptHttpClientModule} from 'nativescript-angular/http-client';
 // Uncomment and add to NgModule imports if you need to use two-way binding
