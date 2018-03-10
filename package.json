@@ -4,7 +4,10 @@
 	"readme": "NativeScript Application",
 	"repository": "<fill-your-repository-here>",
 	"nativescript": {
-		"id": "com.suzutsuki.tsukibb"
+		"id": "com.suzutsuki.tsukibb",
+		"tns-ios": {
+			"version": "3.4.1"
+		}
 	},
 	"dependencies": {
 		"@angular/animations": "~5.2.0",
