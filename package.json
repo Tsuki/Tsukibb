@@ -1,8 +1,8 @@
 {
 	"description": "NativeScript Application",
-	"license": "SEE LICENSE IN <your-license-filename>",
+	"license": "SEE LICENSE IN LICENSE",
 	"readme": "NativeScript Application",
-	"repository": "<fill-your-repository-here>",
+	"repository": "https://github.com/Tsuki/Tsukibb",
 	"nativescript": {
 		"id": "com.suzutsuki.tsukibb",
 		"tns-ios": {
