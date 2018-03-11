@@ -7,6 +7,9 @@
 		"id": "com.suzutsuki.tsukibb",
 		"tns-ios": {
 			"version": "3.4.1"
+    },
+    "tns-android": {
+      "version": "3.4.2"
 		}
 	},
 	"dependencies": {
@@ -21,7 +24,6 @@
 		"@angular/router": "~5.2.0",
 		"lz-string": "^1.4.4",
 		"nativescript-angular": "~5.2.0",
-      "nativescript-image-cache": "^1.1.5",
 		"nativescript-plugin-firebase": "^5.1.8",
 		"nativescript-theme-core": "~1.0.4",
 		"reflect-metadata": "~0.1.8",
@@ -30,8 +32,12 @@
 		"zone.js": "~0.8.2"
 	},
 	"devDependencies": {
+    "babel-traverse": "6.4.5",
+    "babel-types": "6.4.5",
+    "babylon": "6.4.5",
+    "lazy": "1.0.11",
 		"nativescript-dev-typescript": "~0.6.0",
-      "tslint": "^5.9.1",
+    "tslint": "^5.9.1",
 		"typescript": "~2.6.2"
 	}
 }

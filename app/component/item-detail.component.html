@@ -3,6 +3,6 @@
   <FlexboxLayout class="m-15">
     <Label class="h2" [text]="item.name_chi"></Label>
   </FlexboxLayout>
-  <Image src="'https://ebb.io/_/poster/252x388'" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>
+  <Image [src]="'https://ebb.io/_/poster/'+item.anime_id+'x'+item.season_id" stretch="none"></Image>
   <Label class="h4" [text]="'https://ebb.io/_/poster/252x388'"></Label>
 </FlexboxLayout>
