@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {initializeOnAngular} from 'nativescript-image-cache';
 
 @Component({
   selector: 'ns-app',
@@ -8,7 +9,7 @@ import {Component, OnInit} from '@angular/core';
 export class AppComponent implements OnInit {
 
   constructor() {
-    // initializeOnAngular();
+    initializeOnAngular();
     // firebase.init({
     //   iOSEmulatorFlush: true
     // }).then(instance => {
