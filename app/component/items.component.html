@@ -23,11 +23,30 @@ These components make use of several CSS class names that are part of the Native
 core theme, such as p-20, btn, h2, and list-group. You can view a full list of the
 class names available for styling your app at https://docs.nativescript.org/ui/theme.
 -->
-<StackLayout class="page">
-  <ListView [items]="items" class="list-group">
-    <ng-template let-item="item">
-      <Label [nsRouterLink]="['/item', item.anime_id]" [text]="item.name_chi"
-             class="list-group-item"></Label>
-    </ng-template>
-  </ListView>
-</StackLayout>
+<ScrollView>
+  <StackLayout>
+    <ListView [items]="getItems" class="list-group">
+      <ng-template let-item="item">
+        <GridLayout columns="*,*,*" rows="200, 20">
+          <Image [nsRouterLink]="['/item', item[0].anime_id]"
+                 [src]="'https://ebb.io/_/poster/'+item[0].anime_id+'x'+item[0].season_id"
+                 stretch="aspectFill" col="0" loadAsync="true"></Image>
+          <Label [nsRouterLink]="['/item', item[0].anime_id]" [text]="item[0].name_chi"
+                 col="0" row="1"></Label>
+
+          <Image *ngIf="item[1]" [nsRouterLink]="['/item', item[1].anime_id]"
+                 [src]="'https://ebb.io/_/poster/'+item[1].anime_id+'x'+item[1].season_id"
+                 stretch="aspectFill" col="1" loadAsync="true"></Image>
+          <Label *ngIf="item[1]" [nsRouterLink]="['/item', item[1].anime_id]" [text]="item[1].name_chi"
+                 col="1" row="1"></Label>
+
+          <Image *ngIf="item[2]" [nsRouterLink]="['/item', item[2].anime_id]"
+                 [src]="'https://ebb.io/_/poster/'+item[2].anime_id+'x'+item[2].season_id"
+                 stretch="aspectFill" col="2" loadAsync="true"></Image>
+          <Label *ngIf="item[2]" [text]="item[2].name_chi"
+                 col="2" row="1"></Label>
+        </GridLayout>
+      </ng-template>
+    </ListView>
+  </StackLayout>
+</ScrollView>
