@@ -2,7 +2,7 @@ import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
 import {NativeScriptModule} from 'nativescript-angular/nativescript.module';
 import {AppRoutingModule} from './app.routing';
 import {AppComponent} from './app.component';
-
+import {GridViewModule} from 'nativescript-grid-view/angular';
 import {ItemService} from './services/item.service';
 import {ItemsComponent} from './component/items.component';
 import {ItemDetailComponent} from './component/item-detail.component';
@@ -19,6 +19,7 @@ import {NativeScriptFormsModule} from 'nativescript-angular/forms';
     NativeScriptModule,
     NativeScriptHttpClientModule,
     NativeScriptFormsModule,
+    GridViewModule,
     AppRoutingModule
   ],
   declarations: [
